@@ -1,0 +1,31 @@
+{
+  "name": "puppeteer-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "protractor":"node ./node_modules/protractor/bin/protractor",
+    "update": "npx webdriver-manager update",
+    "protractor:js": "npm run protractor ./protractor.conf.js",
+    "protractor:ts": "npm run protractor ./protractor.conf.ts.js",
+    "protractor:js:headless": "npm run protractor ./protractor.conf.headless.js",
+    "protractor:ts:headless": "npm run protractor ./protractor.conf.ts.headless.js",
+    "puppeteer:js": "node ./puppeteer/index.js",
+    "puppeteer:ts": "ts-node ./puppeteer/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.19.0"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.3.15",
+    "@types/node": "^12.6.8",
+    "@types/puppeteer": "^1.12.4",
+    "jasmine": "^3.4.0",
+    "protractor": "^5.4.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}
